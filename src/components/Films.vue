@@ -45,7 +45,7 @@
 		},
 		created: function() {
 			//初始化电影列表数据
-			axios.get('../../static/films2.json').then(response =>
+			axios.get('../../static/resources/films2.json').then(response =>
 				(this.films = response.data,this.currentFilms=this.films.slice(10 * (this.currentPage - 1), 10 * this.currentPage))
 			)
 		},
