@@ -1,5 +1,5 @@
 <template>
-	<div class="hello">
+	<div class="FilmCell" style="margin-left:3rem;margin-right:4rem">
 		<p class="ul"></p>
 		<table width="100%">
 			<tbody>
@@ -17,10 +17,10 @@
 
 						<div class="pl2">
 							<a title="" class="nbg" href="javascript:void(0)" @click="Describe">
-								<p style="font-size:13px;">{{film.title}}</p>
+								<p style="font-size:16px;">{{film.title}}</p>
 							</a>
 							<!--上映时间-->
-							<div style="margin-bottom: 1em;">
+							<div style="margin-bottom: 1em; text-align: justify;">
 								<p>
 									<span class="pl">
 										{{film.summary.substr(0,100)+'....'}}
@@ -29,7 +29,7 @@
 							</div>
 
 							<!--评分-->
-							<div class="star clearfix">
+							<div class="star clearfix" style="margin-bottom: 1rem;">
 								<!-- <span class="allstar20"></span> -->
 								<el-col :span="6" :offset="6">
 									<el-rate style="float: right;" v-model="film.rating.average/2" disabled show-score text-color="#ff9900"></el-rate>
@@ -87,7 +87,7 @@
 	}
 
 	.pl2 {
-		font: 14px Arial, Helvetica, sans-serif;
+		font: 16px Arial, Helvetica, sans-serif;
 		line-height: 150%;
 		color: #666666;
 	}
@@ -115,12 +115,12 @@
 	.rating_nums,
 	.rating_num {
 		color: #e09015;
-		font-size: 12px;
+		font-size: 15px;
 		padding: 0 3px;
 	}
 
 	.pl {
-		font: 12px Arial, Helvetica, sans-serif;
+		font: 15px Arial, Helvetica, sans-serif;
 		line-height: 150%;
 		color: #666666;
 	}

@@ -7,7 +7,7 @@
 				<span class="year">({{film.pubdate[0].split('-')[0]==''? '未知':film.pubdate[0].split('-')[0]}})</span>
 			</h1>
 
-			<div id="mainpic">
+			<div id="mainpic" style ="margin-left:5rem;">
 
 				<img width=135 alt="" :src="film.poster" :onerror="logo">
 
@@ -309,6 +309,7 @@
 		width: 10;
 		/* border:1px solid #DDDDDD; */
 		border-radius: 5px 5px;
+		margin-right:5rem
 		/* margin-left:2rem */
 	}
 </style>

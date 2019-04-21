@@ -70,19 +70,29 @@
 			},
 			searchBytitle(){
 				//this.filmTitle;
-				
+				//console.log(JSON.parse(this.films[1]).aka[0].indexOf('要命的决定'))
+				//console.log(JSON.parse(this.films[1]).aka[0])
 				var serachResult=[];
-				var input=this.filmTitle.trim()
+				var input=this.filmTitle.trim().toUpperCase()
 				for(var i=0,len=this.films.length;i<len;i++){
 					var film=JSON.parse(this.films[i])
-					if (film.title){
+					if (film.title!=null){
 						var s=film.title.trim().toUpperCase()
-						input=input.toUpperCase()
+						
 						if(s.indexOf(input)!=-1){
 							serachResult.push(this.films[i])
+							continue
 						}
 					}
-					
+					for(var j=0,len2=film.aka.length;j<len2;j++){
+						if(film.aka[j]){
+							var s=film.aka[j].trim().toUpperCase()
+							if(s.indexOf(input)!=-1){
+								serachResult.push(this.films[i])
+								break
+							}
+						}
+					}
 				}
 				this.currentFilms=serachResult
 			}

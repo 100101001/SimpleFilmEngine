@@ -13,3 +13,21 @@
 
 
 
+## 分页概要
+
+<img src=".\imgs\img1.PNG">
+
+
+
+## 电影名搜索
+
+<img src=".\imgs\img2.PNG">
+
+
+
+<img src=".\imgs\img3.PNG">
+
+## 电影详情
+
+<img src=".\imgs\img4.PNG">
+
