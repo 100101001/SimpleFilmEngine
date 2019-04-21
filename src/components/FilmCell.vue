@@ -4,15 +4,15 @@
 		<table width="100%">
 			<tbody>
 				<tr class="item">
-					<td width="100" valign="top">
+					<td width="100" valign="center" >
 
 
 						<a title="" class="nbg" href="javascript:void(0)" @click="Describe">
-							<img width="75" alt="" :src="film.poster" :onerror="logo" >
+							<img width="85" alt="" :src="film.poster" :onerror="logo" >
 						</a>
 					</td>
 
-					<td valign="top">
+					<td valign="center">
 
 
 						<div class="pl2">
