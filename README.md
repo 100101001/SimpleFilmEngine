@@ -1,6 +1,6 @@
 # a_simplefilm
 
-运行vue项目的环境配置
+运行vue项目的环境配
 
 - node.js环境（npm包管理器）
 - cnpm  npm的淘宝镜像 【可选】
