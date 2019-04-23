@@ -21,13 +21,13 @@
 
 ## 电影名搜索
 
-<img src=".\imgs\img2.PNG">
+<img src=".\imgs\img2.png">
 
 
 
-<img src=".\imgs\img3.PNG">
+<img src=".\imgs\img3.png">
 
 ## 电影详情
 
-<img src=".\imgs\img4.PNG">
+<img src=".\imgs\img4.png">
 
