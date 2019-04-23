@@ -15,34 +15,32 @@
 
 			<div id="info" style="text-align: justify">
 				<!--导演可能有多位-->
-				<span><span class="pl">导演</span>: <span class="attrs">{{directors==''? '未知':directors}}</span></span><br>
+				<span><span class="pl" style="color:#909399"><strong>导演:</strong></span><span class="attrs">{{directors==''? '未知':directors}}</span></span><br>
 				<!--编剧可能有多位-->
 				<span>
-					<span class="pl">编剧</span>:
+					<span class="pl" style="color:#909399"><strong>编剧:</strong></span>
 					<span class="attrs">{{writers==''? '未知':writers}}</span>
 				</span>
 				<br>
 
 				<!--主演可能有多位-->
-				<span class="actor"><span class="pl">主演</span>: <span class="attrs"><span>{{casts==''? '未知':casts}}
-						</span></span></span><br>
+				<span class="pl"  style="color:#909399"><strong>主演:</strong></span> <span class="attrs"><span>{{casts==''? '未知':casts}}
+						</span></span><br>
 
 				<!--类型可能有多个-->
-				<span class="pl">类型:</span> <span property="v:genre">{{genres==''? '未知':genres}}</span><br>
-
-				<span class="pl">制片国家/地区:</span> 中国大陆<br>
+				<span class="pl" style="color:#909399"><strong>类型:</strong></span> <span property="v:genre">{{genres==''? '未知':genres}}</span><br>
 
 				<!--语言可能有多个-->
-				<span class="pl">语言:</span> {{languages==''? '未知':languages}}<br>
+				<span class="pl" style="color:#909399"><strong>语言:</strong></span> {{languages==''? '未知':languages}}<br>
 
 
-				<span class="pl">上映日期:</span> <span content="2019-02-05(中国大陆)" property="v:initialReleaseDate">{{pubCountries==''? '未知':pubCountries}}</span><br>
-				<span class="pl">片长:</span> <span content="116" property="v:runtime">{{film.duration==''? '未知':film.duration}}分钟</span><br>
+				<span class="pl" style="color:#909399"><strong>上映日期:</strong></span> <span content="2019-02-05(中国大陆)" property="v:initialReleaseDate">{{pubCountries==''? '未知':pubCountries}}</span><br>
+				<span class="pl" style="color:#909399"><strong>片长:</strong></span> <span content="116" property="v:runtime">{{film.duration==''? '未知':film.duration}}分钟</span><br>
 
 				<!--又名可能有多个-->
-				<span class="pl">又名:</span> {{aka==''? '无':aka}}<br>
+				<span class="pl" style="color:#909399"><strong>又名:</strong></span> {{aka==''? '无':aka}}<br>
 
-				<span class="pl">IMDb链接:</span> <a :href="imdbLink" target="_blank" rel="nofollow">{{film.imdb}}</a><br>
+				<span class="pl" style="color:#909399"><strong>IMDb链接:</strong></span> <a :href="imdbLink" target="_blank" rel="nofollow">{{film.imdb}}</a><br>
 
 			</div>
 
