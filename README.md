@@ -15,11 +15,15 @@
 
 ## 分页概要
 
+使用element-ui评分组件
+
 <img src=".\imgs\img1.PNG">
 
 
 
 ## 电影名搜索
+
+包含别名
 
 <img src=".\imgs\img2.png">
 
