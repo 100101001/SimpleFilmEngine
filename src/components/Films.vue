@@ -157,7 +157,14 @@ export default {
       //console.log(JSON.parse(this.films[1]).aka[0].indexOf('要命的决定'))
       //console.log(JSON.parse(this.films[1]).aka[0])
       if (!this.filmTitle) {
-        return;
+        this.activeName = "0";
+        this.total = this.films.length;
+        this.currentPage = 1;
+        this.films_genre = this.films;
+        this.currentFilms = this.films_genre.slice(
+          10 * (this.currentPage - 1),
+          10 * this.currentPage
+        );
       }
       var searchResult = [];
       var input = this.filmTitle.trim().toUpperCase();
@@ -194,9 +201,9 @@ export default {
     changeGenre(tab, event) {
       this.activeName = tab.index;
       //如果点到了所有
-      if (tab.index == 0) {
+      if (tab.index == "0") {
         //重新设置页面参数和电影参数为全体films
-        this.film_genre = this.films;
+        this.films_genre = this.films;
         this.currentPage = 1;
         this.currentFilms = this.films_genre.slice(
           10 * (this.currentPage - 1),
