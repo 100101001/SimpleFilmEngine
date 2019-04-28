@@ -23,7 +23,7 @@
 
 ## 电影名搜索
 
-包含别名
+包含别名，输入关键字，**按回车或者点击搜索按钮**，即可查找，分页组件根据返回结果数实时变化。
 
 <img src=".\imgs\img2.png">
 
@@ -35,3 +35,26 @@
 
 <img src=".\imgs\img4.png">
 
+点击返回，前一页面数据状态不变
+
+
+
+
+
+## 电影类别
+
+页面创建时，按照各类别逆序渲染生成标签页栏，切换后分页组件实时变化。
+
+
+
+
+
+
+
+
+
+## Reference
+
+https://blog.csdn.net/z_xuewen/article/details/85264653 回车搜索
+
+https://www.jianshu.com/p/d1ccef6d8c58 返回保持页面状态
